@@ -23,6 +23,15 @@
 )
 
 
+(defn is-prime 
+  "check if a given number is prime"
+  [num]
+
+  (let [m (min-divisor num)]
+    (and (> m 1) (= m num))
+  )
+)
+
 
 (defn foo
   "I don't do a whole lot."
