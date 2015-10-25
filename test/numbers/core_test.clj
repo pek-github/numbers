@@ -29,6 +29,29 @@
 )
 
 
+(deftest is-prime-test
+  (testing "Prime number 2"
+    (is (is-prime 2)))
+
+  (testing "Prime number 7"
+    (is (is-prime 7)))
+
+  (testing "Non-Prime number 6"
+    (is (not (is-prime 6))))
+
+  (testing "Non-Prime number 15"
+    (is (not (is-prime 15))))
+
+  (testing "Edge-case: number 1"
+    (is (not (is-prime 1))))
+
+  (testing "Edge-case: number 0"
+    (is (not (is-prime 0))))
+
+  (testing "Edge-case: negative integer: -11"
+    (is (not (is-prime -11))))
+)
+
 
 (deftest a-test
   (testing "FIXME, I fail."
